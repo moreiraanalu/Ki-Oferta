@@ -1,0 +1,10 @@
+{
+  "appId": "com.etec.kioferta",
+  "appName": "kioferta",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
