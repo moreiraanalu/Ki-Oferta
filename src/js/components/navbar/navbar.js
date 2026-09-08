@@ -6,7 +6,11 @@ function renderNavbar(rotas){
     <nav>
         <ul class="navbar-bottom">
             ${
-            rotas.map((Menu) => `<li><a href="${Menu.url}" class="nav-icon"> <i data-lucide="${Menu.icon}"></i>${Menu.label} </a></li>`) 
+                rotas.filter(Menu => Menu.label !=="").map((Menu) => 
+                    `<li>
+                        <a href="${Menu.url}" class="nav-icon"> 
+                        <i data-lucide="${Menu.icon}"></i>
+                        ${Menu.label} </a></li>`) 
             .join("")
             }
 

@@ -7,4 +7,19 @@ renderNavbar(rotas)
 createIcons({ icons });
 
 const app = document.querySelector("#app")
-app.innerHTML = "olá mundo"
+
+function renderAPP(){
+    const hash = window.location.hash || "#busca"
+    const rota = rotas.find(tela => tela.url === hash)
+    console.log(rota)
+    if(rota){
+        rota.pagina(app)
+        createIcons({icons});
+    }else{
+        app.innerHTML = "Página não encontrada"
+    }
+}
+
+window.addEventListener("hashchange", renderAPP)
+
+renderAPP()

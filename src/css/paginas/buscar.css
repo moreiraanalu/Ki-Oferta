@@ -1,0 +1,22 @@
+.container-buscar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subtitulo-buscar{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.grupo-input{
+    display: flex;
+}
+
+#input-busca{
+
+}
+
+.btn-busca{
+    background-color: var(--cor-secundaria);
+}
