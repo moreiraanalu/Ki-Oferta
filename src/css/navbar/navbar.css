@@ -6,7 +6,7 @@
     gap: 13px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 640px;
     height: 60px;
     background-color: var(--cor-primaria);
 }

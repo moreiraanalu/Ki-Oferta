@@ -19,23 +19,23 @@ function buscar(app){
             <div class="categorias-busca">
                 <p> Categoria</p>
                 <ul class="categoria-lista">
-                <li>
-                    Mercearia
+                <li class="categoria-item">
+                    <a href="#mercearia">Mercearia</a>
                 </li>
-                <li>
-                    Carnes
+                <li class="categoria-item">
+                    <a href="#carnes"> Carnes</a>
                 </li>
-                <li>
-                    Hortifruti
+                <li class="categoria-item">
+                    <a href="#hortifruti">Hortifruti</a>
                 </li>
-                <li>
-                    Bebidas
+                <li class="categoria-item">
+                    <a href="#bebidas">Bebidas</a>
                 </li>
-                <li>
-                    Limpeza
+                <li class="categoria-item">
+                    <a href="#limpeza">Limpeza</a>
                 </li>
-                <li>
-                    Higiene
+                <li class="categoria-item">
+                    <a href="#higiene">Higiene</a>
                 </li>
 
                 </ul>
