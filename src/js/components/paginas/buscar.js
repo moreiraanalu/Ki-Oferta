@@ -1,3 +1,5 @@
+import produtos from "../paginas/produtos"
+
 function buscar(app){
     app.innerHTML = `
         <div class="container-buscar">
@@ -20,22 +22,22 @@ function buscar(app){
                 <p> Categoria</p>
                 <ul class="categoria-lista">
                 <li class="categoria-item">
-                    <a href="#mercearia">Mercearia</a>
+                    Mercearia
                 </li>
                 <li class="categoria-item">
-                    <a href="#carnes"> Carnes</a>
+                    Carnes
                 </li>
                 <li class="categoria-item">
-                    <a href="#hortifruti">Hortifruti</a>
+                   Hortifruti
                 </li>
                 <li class="categoria-item">
-                    <a href="#bebidas">Bebidas</a>
+                   Bebidas
                 </li>
                 <li class="categoria-item">
-                    <a href="#limpeza">Limpeza</a>
+                  Limpeza
                 </li>
                 <li class="categoria-item">
-                    <a href="#higiene">Higiene</a>
+                    Higiene
                 </li>
 
                 </ul>
@@ -44,6 +46,19 @@ function buscar(app){
         
             </div>
     `
+
+
+
+    capturarEvento(app)
+
+}
+
+function capturarEvento(app){ 
+    document.querySelector(".categoria-lista").addEventListener("click", (event)=>{
+        //console.log(event.target.textContent.toLowerCase().trim())
+        let categoriaSelecionada = event.target.textContent.toLowerCase().trim()
+        produtos.pagina(app, categoriaSelecionada )
+    } )
 }
 
 export default {
